@@ -3,7 +3,7 @@ var extend = require('xtend')
 var pkg = require('./package.json')
 
 var configStandard = require('eslint-config-standard')
-var configStandardJsx = require('eslint-config-standard-jsx')
+var configStandardJsx = require('eslint-config-sane-standard-jsx')
 
 var config = extend(configStandard)
 config.plugins.push.apply(config.plugins, configStandardJsx.plugins)
